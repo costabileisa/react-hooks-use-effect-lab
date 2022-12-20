@@ -12,6 +12,7 @@ function App() {
     if (currentQuestionId < questions.length) {
       setCurrentQuestion((currentQuestionId) => currentQuestionId + 1);
     } else {
+      console.log(currentQuestionId)
       setCurrentQuestion(null);
     }
     if (correct) {
